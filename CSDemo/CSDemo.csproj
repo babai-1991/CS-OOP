@@ -46,6 +46,14 @@
     <Compile Include="Composition\DbMigrator.cs" />
     <Compile Include="Composition\Installer.cs" />
     <Compile Include="Composition\Logger.cs" />
+    <Compile Include="Extensibility\ConsoleLogger.cs" />
+    <Compile Include="Extensibility\DbMigrator.cs" />
+    <Compile Include="Extensibility\FileLogger.cs" />
+    <Compile Include="Extensibility\ILogger.cs" />
+    <Compile Include="InterfacePolymorphism\Mail.cs" />
+    <Compile Include="InterfacePolymorphism\MailService.cs" />
+    <Compile Include="InterfacePolymorphism\Video.cs" />
+    <Compile Include="InterfacePolymorphism\VideoEncoder.cs" />
     <Compile Include="InterfaceTestibility\IShippingCalculator.cs" />
     <Compile Include="InterfaceTestibility\OrderProcessor.cs" />
     <Compile Include="InterfaceTestibility\Order.cs" />
