@@ -8,11 +8,11 @@ namespace CSDemo.InterfaceTestibility
 {
     public class OrderProcessor
     {
-        private readonly ShippingCalculator _shippingCalculator;
+        private readonly IShippingCalculator _shippingCalculator;
 
-        public OrderProcessor()
+        public OrderProcessor(IShippingCalculator calculator)
         {
-            _shippingCalculator = new ShippingCalculator();
+            _shippingCalculator = calculator;
         }
         public void Process(Order order)
         {
@@ -24,8 +24,7 @@ namespace CSDemo.InterfaceTestibility
             order.Shipment = new Shipment
             {
                 Cost = _shippingCalculator.CalculateShipping(order),
-                ShoppingDate = DateTime.Now.AddDays(1)
-
+                ShoppingDate = DateTime.Today.AddDays(1)
             };
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace CSDemo.InterfaceTestibility
 {
-    public class ShippingCalculator
+    public class ShippingCalculator :IShippingCalculator
     {
         public float CalculateShipping(Order order)
         {

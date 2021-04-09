@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E941A58F-2F33-451F-BB29-42C56B9E55B5}</ProjectGuid>
+    <ProjectGuid>{50D4810E-B1C9-423F-93E5-37CBB24A058F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProjectName.Test</RootNamespace>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="OrderProcessorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSDemo\CSDemo.csproj">
-      <Project>{7ef0b50d-66a9-4c01-a2c0-242ad1d87885}</Project>
+      <Project>{7EF0B50D-66A9-4C01-A2C0-242AD1D87885}</Project>
       <Name>CSDemo</Name>
     </ProjectReference>
   </ItemGroup>
