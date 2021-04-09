@@ -32,6 +32,10 @@ namespace CSDemo
             //dbMigrator2.Migrate();
 
             var videoEncoder = new VideoEncoder();
+            videoEncoder.RegisterNotificationChannel(new MailNotificationChannel());
+            videoEncoder.RegisterNotificationChannel(new SmsNotificationChannel());
+            
+            
             videoEncoder.Encode(new Video());
         }
     }

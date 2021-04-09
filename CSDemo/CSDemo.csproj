@@ -50,8 +50,12 @@
     <Compile Include="Extensibility\DbMigrator.cs" />
     <Compile Include="Extensibility\FileLogger.cs" />
     <Compile Include="Extensibility\ILogger.cs" />
+    <Compile Include="InterfacePolymorphism\INotificationChannel.cs" />
     <Compile Include="InterfacePolymorphism\Mail.cs" />
+    <Compile Include="InterfacePolymorphism\MailNotificationChannel.cs" />
     <Compile Include="InterfacePolymorphism\MailService.cs" />
+    <Compile Include="InterfacePolymorphism\Message.cs" />
+    <Compile Include="InterfacePolymorphism\SmsNotificationChannel.cs" />
     <Compile Include="InterfacePolymorphism\Video.cs" />
     <Compile Include="InterfacePolymorphism\VideoEncoder.cs" />
     <Compile Include="InterfaceTestibility\IShippingCalculator.cs" />

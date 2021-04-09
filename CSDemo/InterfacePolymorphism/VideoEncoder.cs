@@ -8,16 +8,26 @@ namespace CSDemo.InterfacePolymorphism
 {
     public class VideoEncoder
     {
-        private readonly MailService _mailService;
+        //private readonly MailService _mailService;
+
+        private IList<INotificationChannel> _notification;
 
         public VideoEncoder()
         {
-            _mailService = new MailService();
+            _notification = new List<INotificationChannel>();
         }
         public void Encode(Video video)
         {
             Console.WriteLine("Video encoded!!");
-            _mailService.Send(new Mail());
+            foreach (var notification in _notification)
+            {
+                notification.Send(new Message());
+            }
+        }
+
+        public void RegisterNotificationChannel(INotificationChannel channel)
+        {
+            _notification.Add(channel);
         }
     }
 }
