@@ -46,6 +46,10 @@
     <Compile Include="Composition\DbMigrator.cs" />
     <Compile Include="Composition\Installer.cs" />
     <Compile Include="Composition\Logger.cs" />
+    <Compile Include="InterfaceTestibility\OrderProcessor.cs" />
+    <Compile Include="InterfaceTestibility\Order.cs" />
+    <Compile Include="InterfaceTestibility\Shipment.cs" />
+    <Compile Include="InterfaceTestibility\ShippingCalculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
